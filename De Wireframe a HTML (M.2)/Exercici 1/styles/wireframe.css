@@ -1,0 +1,173 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 1018px;
+    background: #e5e6e8;
+
+    /*reset estils per defecte del navegador*/
+}
+
+.agrupacio {
+    width: 1000px;
+    margin: auto;
+}
+
+header {
+    width: 1000px;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    background: #4b4b4d;
+    position: relative;
+}
+
+#logo {
+    width: 200px;
+    height: 60px;
+    background: #d1d2d4;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+
+.social #soc1{
+    position: absolute;
+    right: 32px;
+    top: 40px;
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;
+    background: #e4e5e7;
+
+}
+
+.social #soc2{
+    position: absolute;
+    right: 88px;
+    top: 40px;
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;
+    background: #e4e5e7;
+
+}
+
+.social #soc3{
+    position: absolute;
+    right: 144px;
+    top: 40px;
+    width: 40px;
+    height: 40px;    
+    border-radius: 50%;
+    background: #e4e5e7;
+
+}
+
+.navegacion {
+    position: relative;
+    width: 1000px;
+    height: 48px;
+    margin-bottom: 24px;
+    background: #e5e6e8;
+
+
+}
+
+#caja1 {
+    position: absolute;
+    background: #969799;
+    width: 197px;
+    height: 48px;
+}
+
+#caja2 {
+    position: absolute;
+    left: 201px;
+    background: #969799;
+    width: 197px;
+    height: 48px;
+
+}
+
+#caja3 {
+    position: absolute;
+    left: 402px;
+    background: #969799;
+    width: 197px;
+    height: 48px;
+
+}
+
+#caja4 {
+    position: absolute;
+    left: 602px;
+    background: #969799;
+    width: 197px;
+    height: 48px;
+
+}
+
+#caja5 {
+    position: absolute;
+    right: 0px;
+    background: #969799;
+    width: 197px;
+    height: 48px;
+
+}
+
+.asid {
+    position: relative;
+    width: 1000px;
+    height: 190px;
+    margin-bottom: 24px;
+}
+
+#asd1 {
+    position: absolute;
+    width: 326px;
+    height: 190px;
+    background: #848587;
+}
+
+#asd2 {
+    position: absolute;
+    left: 336px;
+    width: 326px;
+    height: 190px;
+    background: #848587;
+}
+
+#asd3 {
+    position: absolute;   
+    right: 0px;
+    width: 326px;
+    height: 190px;
+
+    background: #848587;
+}
+
+article {
+    width: 1000px;
+    height: 454px;
+    margin-bottom: 24px;
+    background: #848587;
+}
+
+article p {
+    width: 600px;
+    height: 454px;
+    background: #4b4b4d;
+    margin: auto;
+}
+
+footer {
+    background: #2d3436;
+    width: 1000px;
+    height: 70px;
+    margin-bottom: 20px;
+}
