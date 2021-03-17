@@ -114,14 +114,32 @@ footer {
     height: 7vh;
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:500px) {
+
+      .contenedor, .header .navegacion, .aside, .article {
+          width: 100%;
+          
+         
+          background: none;
+          
+      } 
     
-    
-    .heaader a {
+    .header a {
         float: none;
         display: block;
     }
-    .social a {
+    .social {
         float: none;
+    }
+
+    .logo {
+        margin-top: auto;
+        
+        
+        
+    }
+    .caja {
+        float: none;
+        display: block;
     }
 }
