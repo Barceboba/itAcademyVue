@@ -73,19 +73,16 @@ body {
     
 }
 
-#inst {
-    
+#inst {    
     background-image: url(../images/instagram.svg);
 }
 
-#twit {
-    
+#twit {    
     background-image: url(../images/twitter.svg);
     
 }
 
 #linke {
-    width: 40px;
     background-image: url(../images/linkedin.svg);
     
 }
@@ -172,7 +169,8 @@ body {
     }
 
     .social ul {
-        display: inline-flex;
+        display: block;
+        margin-right: -22%;
     }
 
     .navegacion, .aside, .article {
