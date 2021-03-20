@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/*Desactiva estilo de listas*/
+ul {
+    list-style: none;
+}
+
+/* Definicion atributos body*/
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #E5E6E8;
+    height: calc(100vh - 11px);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Ancho contenedor, márgenes automáticos*/
+.contenedor {
+    width: 46vw;
+    margin: auto;
+
+
+}
+
+/*Altura, margen abajo y fondo*/
+.header {
+
+    height: 12vh;
+    margin-bottom: 2vh;
+    background: #4b4b4d;
+
+}
+
+/*Quita decoración texto,*/
+
+.header a {
+    float: left;
+    text-decoration: none;
+}
+
+/*Tamaño logo, color, posición*/
+.logo a {
+    width: 200px;
+    height: 60px;
+    background: #d1d2d4;
+    margin-left: 2vw;
+    margin-top: 6.5%;
+}
+
+/* Margen derecho de las bolas*/
+.social li {
+    margin-right: 20px;
+}
+
+/*Creación bolas y posición*/
+.social a {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-top: 5%;
+    background: #e4e5e7;
+}
+
+/*Definición caja menu navegación, altura, margen inferior, color, distribución, alineación*/
+.navegacion {
+    display: flex;
+    height: 4.1vh;
+    margin-bottom: 2vh;
+    background: #e5e6e8;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Definión elementos caja: tamaño y color*/
+.navegacion a {
+
+    background: #969799;
+    width: 19.8%;
+    height: 4.1vh;
+}
+
+/*Definición aside*/
+.aside {
+    display: flex;
+    height: 20vh;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Elemenos dentro de asid*/
+.aside a {
+    width: 32.5%;
+    height: 20vh;
+    background: #848587;
+}
+
+/*Article caracteristicas*/
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45vh;
+    margin-bottom: 2vh;
+    background: #848587;
+}
+
+/*Medidas y color columna*/
+.article a {
+    width: 60%;
+    height: 45vh;
+    background: #4b4b4d;
+    margin: auto;
+}
+
+/*Caracteristicas footer*/
+.footer {
+    background: #2d3436;
+    display: flex;
+    height: 7vh;
+}
+/*Responsive*/
+@media screen and (max-width:500px) {
+
+    .contenedor {
+        width: 100%;
+        float: none;
+        background: none;
+        display: block;
+    }
+
+    .header {
+        width: 100%;
+        display: inline-flex;
+
+    }
+
+    .logo a {
+        width: 150px;
+        height: 40px;
+        margin-top: 12%;
+        margin-left: 0px;
+    }
+
+    .social ul {
+        display: inline-flex;
+    }
+
+    .navegacion, .aside, .article {
+        display: contents;
+    }
+
+    .navegacion a {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .aside a {
+        display: block;
+        width: 328px;
+        height: 190px;
+        margin-bottom: 6px;
+    }
+
+    .article a {
+        display: block;
+        width: 98%;
+        margin: 0px;
+        margin-bottom: 6px;
+    }
+
+}
