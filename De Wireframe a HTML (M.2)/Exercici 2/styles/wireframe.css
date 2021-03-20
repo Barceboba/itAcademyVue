@@ -31,7 +31,8 @@ body {
 
     height: 12vh;
     margin-bottom: 2vh;
-    background: #4b4b4d;
+    background-image: url(../images/header.jpg);
+    
 
 }
 
@@ -46,25 +47,47 @@ body {
 .logo a {
     width: 200px;
     height: 60px;
-    background: #d1d2d4;
+    background-image: url(../images/logo.svg);
     margin-left: 2vw;
-    margin-top: 6.5%;
+    margin-top: 28px;
 }
 
-/* Margen derecho de las bolas*/
+.social {
+    display: flow-root;
+    margin-right: 4%;
+}
 .social li {
-    margin-right: 20px;
+    
+    float: right;
 }
 
 /*Creación bolas y posición*/
 .social a {
-    float: right;
+    
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-left: 8px;
-    margin-top: 5%;
-    background: #e4e5e7;
+    margin-top: 38px;
+    /*background: #e4e5e7;*/
+    
+}
+
+#inst {
+    
+    background-image: url(../images/instagram.svg);
+}
+
+#twit {
+    
+    background-image: url(../images/twitter.svg);
+    
+}
+
+#linke {
+    width: 40px;
+    background-image: url(../images/linkedin.svg);
+    
 }
 
 /*Definición caja menu navegación, altura, margen inferior, color, distribución, alineación*/
