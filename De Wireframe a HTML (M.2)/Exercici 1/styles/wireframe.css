@@ -144,12 +144,16 @@ body {
     .logo a {
         width: 150px;
         height: 40px;
-        margin-top: 12%;
+        margin-top: 2em;
         margin-left: 0px;
     }
 
     .social ul {
         display: inline-flex;
+    }
+
+    .social a {
+        margin-top: 2em;
     }
 
     .navegacion, .aside, .article {
@@ -164,14 +168,14 @@ body {
 
     .aside a {
         display: block;
-        width: 328px;
+        width: auto;
         height: 190px;
         margin-bottom: 6px;
     }
 
     .article a {
         display: block;
-        width: 98%;
+        width: auto;
         margin: 0px;
         margin-bottom: 6px;
     }
