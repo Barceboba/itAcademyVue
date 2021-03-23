@@ -29,10 +29,12 @@ body {
 
 /*Altura, margen abajo y fondo*/
 .header {
+    
 
     height: 12vh;
     margin-bottom: 2vh;
-    background-image: url(../images/header.jpg);
+    background: url(../images/header.jpg)  no-repeat round center;
+    background-size: cover;
 
 
 }
@@ -50,12 +52,12 @@ body {
     height: 60px;
     background-image: url(../images/logo.svg);
     margin-left: 2vw;
-    margin-top: 28px;
+    margin-top: 3em;
 }
 
 .social {
-    display: flow-root;
-    margin-right: 4%;
+    
+    margin-right: 2vw;
 }
 
 .social li {
@@ -70,7 +72,7 @@ body {
     height: 40px;
     border-radius: 50%;
     margin-left: 8px;
-    margin-top: 38px;
+    margin-top: 3.3em;
     /*background: #e4e5e7;*/
 
 }
@@ -96,18 +98,18 @@ body {
     height: 4.1vh;
     margin-bottom: 2vh;
     background: #e5e6e8;
-    font-size: 1.2vw;
     text-align: center;
+    font: 1em Dosis;
 
 }
 
 /*Definión elementos caja: tamaño y color*/
 .navegacion a {
     align-items: center;
-    padding-top: 1.5vh;
+    padding-top: 1vh;
     text-decoration: none;
     
-    background: #969799;
+    background: #eb740c97;
     width: 19.6%;
     height: 4.1vh;
 }
@@ -116,44 +118,64 @@ body {
 .aside {
     display: flex;
     margin-bottom: 2vh;
-    text-decoration: none;
+    height: 17rem;
 }
 
 /*Elemenos dentro de asid*/
 
 
-
+.aside p {
+    font-family: Raleway;
+    padding: 2em;
+    background: #578efa;
+    opacity: 0.7;
+    color: brown;
+}
 
 
 .asd1 {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: center;
     text-align: center;
     background-image: url(../images/aside1.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
     margin-right: 1%;
+
 }
 
 #foot1, #foot2, #foot3 {
-        background-color: #2d3436;
+        background-color: #149bc15a;
         padding: .5em;
+
 }
 
 .asd2 {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: center;
     text-align: center;
     background-image: url(../images/aside2.jpg);
-    background-repeat: no-repeat;
-    margin: auto;
-    text-decoration: nne;
+    background-size: cover;
+    
+    
 
 
 }
 
 .asd3 {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: stretch;
+    justify-content: center;
     text-align: center;
     background-image: url(../images/aside3.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
     margin-left: 1%;
 
 }
@@ -200,10 +222,15 @@ body {
     }
 
     .logo a {
-        width: 150px;
-        height: 40px;
-        margin-top: 12%;
+        width: 8em;
+        height: 2.8em;
+        margin-top: 2em;
         margin-left: 0px;
+    }
+
+    .social {
+        margin-right: 3em;
+        width: inherit;
     }
 
     .social ul {
@@ -219,8 +246,12 @@ body {
 
     .navegacion a {
         display: block;
-        width: 100%;
-        margin-bottom: 8px;
+        padding: revert;
+        width: auto;
+        font-family: 'Dosis';
+        font-size: 7em;
+        letter-spacing: .1em;
+        margin-bottom: .2em;
     }
 
     .aside a {
