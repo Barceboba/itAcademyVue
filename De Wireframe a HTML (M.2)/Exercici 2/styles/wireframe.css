@@ -168,9 +168,9 @@ body {
     text-decoration: none;
 }
 
-#foot1:hover,
-#foot2:hover,
-#foot3:hover {
+#foot1 a:hover,
+#foot2 a:hover,
+#foot3 a:hover {
     background-color: #b90e725a;
 }
 
@@ -259,7 +259,7 @@ article {
     opacity: .9;
 }
 
-.article header:hover {
+.article header a:hover {
     background-color: coral;
 }
 
@@ -279,9 +279,22 @@ article {
 
 /*Caracteristicas footer*/
 .footer {
-    background: #0d083f31;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1e272e;
+    font-family: 'Dosis';
     height: 7vh;
+    color: #ffa801;
+}
+
+.footer a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.footer a:hover {
+    color: #3a3dcc;
 }
 
 /*Responsive*/
@@ -307,44 +320,63 @@ article {
         margin-left: 0px;
     }
 
-    .social {
-        margin-right: 3em;
+    .social {        
+        margin-right: 1em;
         width: inherit;
     }
 
-    .social ul {
+    .social a {
         display: block;
         margin-right: -22%;
     }
 
+    .social ul {
+        margin-top: -1em;
+
+    }
+
     .navegacion,
-    .aside,
-    .article {
+    .aside {
         display: contents;
+        
     }
 
     .navegacion a {
-        display: block;
+        display: flex;
         padding: revert;
         width: auto;
         font-family: 'Dosis';
-        font-size: 7em;
         letter-spacing: .1em;
         margin-bottom: .2em;
     }
 
-    .aside a {
-        display: block;
-        width: 328px;
-        height: 190px;
-        margin-bottom: 6px;
+    .asd1, .asd2, .asd3 {
+        background-image: none;
+        margin: inherit;
+        width: 100%;
     }
 
-    .article a {
-        display: block;
-        width: 98%;
-        margin: 0px;
-        margin-bottom: 6px;
+    article {
+        background-image: none;
+        margin-bottom: 0;
+
     }
+
+    .article {
+        width: 100%;
+        font-size: medium;
+        
+    }
+
+    .article1, .article2 {
+        display: block;
+        background-image: none;
+    }
+
+    .footer {
+        display: grid;
+    }
+
+    
 
 }
