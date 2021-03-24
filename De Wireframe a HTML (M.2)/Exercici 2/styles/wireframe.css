@@ -11,12 +11,12 @@ ul {
 /* Definicion atributos body*/
 body {
     font-size: 100%;
-    font-family: 'Raleway' 'Dosis', sans-serif;
+    font-family: 'Raleway''Dosis', sans-serif;
     background-color: #E5E6E8;
     height: calc(100vh - 11px);
     box-sizing: border-box;
     padding: 1.7vh;
-   
+
 }
 
 /* Ancho contenedor, márgenes automáticos*/
@@ -29,11 +29,11 @@ body {
 
 /*Altura, margen abajo y fondo*/
 .header {
-    
+
 
     height: 12vh;
     margin-bottom: 2vh;
-    background: url(../images/header.jpg)  no-repeat round center;
+    background: url(../images/header.jpg) no-repeat round center;
     background-size: cover;
 
 
@@ -56,7 +56,7 @@ body {
 }
 
 .social {
-    
+
     margin-right: 2vw;
 }
 
@@ -83,12 +83,16 @@ body {
 
 #twit {
     background-image: url(../images/twitter.svg);
-
 }
 
 #linke {
     background-image: url(../images/linkedin.svg);
+}
 
+#inst:hover,
+#twit:hover,
+#linke:hover {
+    background-color: #578efa;
 }
 
 /*Definición caja menu navegación, altura, margen inferior, color, distribución, alineación*/
@@ -99,8 +103,7 @@ body {
     margin-bottom: 2vh;
     background: #e5e6e8;
     text-align: center;
-    font: 1em Dosis;
-
+    font: 1.4em 'Dosis';
 }
 
 /*Definión elementos caja: tamaño y color*/
@@ -108,11 +111,18 @@ body {
     align-items: center;
     padding-top: 1vh;
     text-decoration: none;
-    
     background: #eb740c97;
+    transition: .5s;
     width: 19.6%;
     height: 4.1vh;
 }
+
+.navegacion a:hover {
+
+    background: #088585;
+
+}
+
 
 /*Definición aside*/
 .aside {
@@ -125,7 +135,9 @@ body {
 
 
 .aside p {
-    font-family: Raleway;
+    font-family: 'Raleway';
+    line-height: 1.2rem;
+
     padding: 2em;
     background: #578efa;
     opacity: 0.7;
@@ -146,11 +158,23 @@ body {
 
 }
 
-#foot1, #foot2, #foot3 {
-        background-color: #149bc15a;
-        padding: .5em;
-
+#foot1 a, 
+#foot2 a,
+#foot3 a {
+    background-color: #149bc15a;
+    transition: .5s;
+    padding: .5em .5em 0 .5em;
+    font-family: 'Dosis';
+    text-decoration: none;
 }
+
+#foot1:hover,
+#foot2:hover,
+#foot3:hover {
+    background-color: #b90e725a;
+}
+
+
 
 .asd2 {
     display: flex;
@@ -161,10 +185,6 @@ body {
     text-align: center;
     background-image: url(../images/aside2.jpg);
     background-size: cover;
-    
-    
-
-
 }
 
 .asd3 {
@@ -181,26 +201,85 @@ body {
 }
 
 /*Article caracteristicas*/
-.article {
+article {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 45vh;
     margin-bottom: 2vh;
     background: #848587;
+    background-image: url(../images/article.jpg);
+    background-size: cover;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 45vh;
+    background: #3a3dcc;
+    opacity: 0.8;
+    margin: auto;
+    padding: .2em;
+    font-family: Raleway;
+    font-size: larger;
+}
+
+.article1,
+.article2 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    text-align: center;
+    color: #3a3dcc;
+    background-color: burlywood;
+    border-bottom: .4em solid #3a3dcc;
+}
+
+.article1 {
+    background-image: url(../images/article-1.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+}
+
+.article2 {
+    background-image: url(../images/article-2.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+
+.article header a {
+    background-color: #088585;
+    transition: .5s;
+    padding: .5em;
+    color: #dababa;
+    text-decoration: none;
+    opacity: .9;
+}
+
+.article header:hover {
+    background-color: coral;
+}
+
+.article1 div, .article2 div {
+    align-self: self-end;
+}
+
+.article p {
+    
+    padding: 2%;
+    line-height: 1.6em;
+
 }
 
 /*Medidas y color columna*/
-.article a {
-    width: 60%;
-    height: 45vh;
-    background: #4b4b4d;
-    margin: auto;
-}
+
 
 /*Caracteristicas footer*/
 .footer {
-    background: #2d3436;
+    background: #0d083f31;
     display: flex;
     height: 7vh;
 }
