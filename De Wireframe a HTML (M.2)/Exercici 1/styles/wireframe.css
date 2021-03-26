@@ -28,7 +28,9 @@ body {
 
 /*Altura, margen abajo y fondo*/
 .header {
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 12vh;
     margin-bottom: 2vh;
     background: #4b4b4d;
@@ -47,25 +49,32 @@ body {
     width: 14em;
     height: 4em;
     background: #d1d2d4;
-    margin-left: 2vw;
-    margin-top: 2.7em;
+    margin-left: 1vw;
+    
 }
 
 /* Margen derecho de las bolas*/
-.social li {
-    margin-right: 20px;
+.social div {
+    margin-right: 1em;
+}
+
+.social ul {
+    display: flex;
+    margin-right: 1em;
+    
 }
 
 /*Creación bolas y posición*/
 .social a {
     float: right;
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     margin-left: 8px;
-    margin-top: 3.5em;
     background: #e4e5e7;
 }
+
+
 
 /*Definición caja menu navegación, altura, margen inferior, color, distribución, alineación*/
 .navegacion {
@@ -137,6 +146,9 @@ body {
 
     .header {
         width: 100%;
+        height: 4em;
+        align-items: center;
+        justify-content: space-around;
         display: inline-flex;
 
     }
@@ -144,16 +156,25 @@ body {
     .logo a {
         width: 150px;
         height: 40px;
-        margin-top: 2em;
-        margin-left: 0px;
     }
 
     .social ul {
         display: inline-flex;
+        margin: 0;
+    }
+
+    .social li {
+        margin: 0 .4em 0 0;
     }
 
     .social a {
-        margin-top: 2em;
+        margin: 0;
+        width: 2em;
+        height: 2em;
+    }
+
+    .social li:nth-child(3) {
+        margin: 0;
     }
 
     .navegacion, .aside, .article {
