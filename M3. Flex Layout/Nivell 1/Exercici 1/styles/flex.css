@@ -2,24 +2,25 @@
     box-sizing: border-box;
     margin: 0px;
 }
+
 /*Body con flex calculo altura viewport*/
 body {
     display: flex;
     height: calc(100vh - 0.1em);
     width: 80%;
     margin: auto;
-    background: brown;
     box-sizing: border-box;
     padding: 20px;
 }
+
 /*Contenedor de cajas*/
 .contenedor {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    background-color: #3b81d1;
 }
+
 /* Contenedor cap flex en columna con header y nav*/
 .cap {
     display: flex;
@@ -38,7 +39,7 @@ body {
     height: 12vh;
     background: #44465e;
     border: 1px solid black;
-  }
+}
 
 .cont1 div:nth-child(1n+1) {
     height: 33%;
@@ -56,16 +57,14 @@ body {
     align-items: center;
     height: 12vh;
     background: #ef763a ;
-    
-    
 }
 
 .cont2 div {
     height: 33%;
     width: 97%;
     background: #fecb5e;
-
 }
+
 /* contenedor cos de sarticle y aside*/
 .cos {
     display: flex;
@@ -101,7 +100,9 @@ article {
 
 .article div:nth-child(5) {
     width: 95%;
+    background: #70a3c4;
 }
+
 .aside {
     display: flex;
     flex-direction: column;
