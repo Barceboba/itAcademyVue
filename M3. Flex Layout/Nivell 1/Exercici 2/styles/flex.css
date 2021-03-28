@@ -38,13 +38,12 @@ body {
     align-items: center;
     height: 12vh;
     background: #44465e;
-    border: 1px solid black;
 }
 
 .cont1 div:nth-child(1n+1) {
     height: 33%;
     width: 20%;
-    background: #ef763a;
+    background: #eb5556;
 }
 
 .cont1 div:nth-child(2) {
@@ -140,4 +139,39 @@ article {
     height: 2.2vh;
     width: 100%;
     background: #ef763a;
+}
+
+/*Media Query tablet*/
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+
+    body {
+        width: 100%;
+        padding: 0;
+    }
+
+/*Variaciones en contenedor cap*/
+    .cont1, .cont2 {
+        height: 10vh;
+    }
+
+    .cont1 {
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .cont1 div {
+        background: #eb5556;
+    }
+
+    .cont1 div:nth-child(2) {
+        flex-grow: .7;
+    }
+
+    .cont2 div {
+        width:  90% ;
+    }
+
+
+
+
 }
