@@ -49,13 +49,14 @@ body {
 .cont1 div:nth-child(2) {
     flex-grow: .85;
 }
+
 /* Contenedor 2 de nav*/
 .cont2 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 12vh;
-    background: #ef763a ;
+    background: #ef763a;
 }
 
 .cont2 div {
@@ -162,7 +163,8 @@ aside {
     }
 
     /*Variaciones en contenedor cap*/
-    .cont1, .cont2 {
+    .cont1,
+    .cont2 {
         height: 10vh;
     }
 
@@ -180,7 +182,7 @@ aside {
     }
 
     .cont2 div {
-        width:  90% ;
+        width: 90%;
     }
 
     /*Variaciones contenedor cos*/
@@ -192,7 +194,8 @@ aside {
         background: #feff03;
     }
 
-    article, aside {
+    article,
+    aside {
         width: 100%;
     }
 
@@ -203,7 +206,7 @@ aside {
 
     .article div {
         height: 3.5vh;
-        width: 42%;  
+        width: 42%;
     }
 
     .article div:nth-child(5) {
@@ -224,9 +227,9 @@ aside {
         width: 90%;
         background: #feea85;
     }
-    
+
     .aside div:nth-child(1) {
-         margin-top: 0;
+        margin-top: 0;
     }
 
     .aside div:nth-child(2) {
@@ -246,7 +249,82 @@ aside {
         background: #e6af2e;
 
     }
-    
 
+}
+
+/*Media Queris mobil*/
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    body {
+        width: 100%;
+        padding: 0;
+        height: calc(100vh - 0em);
+    }
+
+    /*Apaptaciones cap*/
+    .cap {
+        height: 30.3vh;
+        border: 1.2em solid #000;
+        justify-content: space-between;
+    }
+
+    .cont1 {
+        height: 10.6vh;
+        justify-content: space-evenly;
+    }
+
+    .cont2 {
+        height: 10.6vh;
+    }
+
+    .cont2 div {
+        width: 85%;
+    }
+
+    /*Apaptaciones cos*/
+    .cos {
+        border: 1.2em solid #feff03;
+        background: #feff03;
+        height: 51.5vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    .article {
+        height: 24.6vh;
+    }
+
+    .article div {
+        width: 34%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .aside {
+        height: 16vh;
+        justify-content: space-evenly;
+    }
+
+    .aside div {
+        margin-top: 0;
+    }
+
+    /*Adaptaciones footer*/
+    .peu {
+        justify-content: center;
+        height: 10.6vh;
+    }
+
+    .peu div {
+        background: #e6af26;
+        width: 90%;
+    }
 
 }
