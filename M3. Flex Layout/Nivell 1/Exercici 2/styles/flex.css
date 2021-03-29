@@ -68,14 +68,14 @@ body {
 .cos {
     display: flex;
     align-items: center;
-    gap: 3%;
+    gap: 2%;
     border: 2rem solid black;
     height: 42%;
     background: black;
 }
 
 article {
-    width: 85%;
+    width: 66%;
 }
 
 .article {
@@ -103,27 +103,28 @@ article {
 }
 
 aside {
-    width: 28%;
+    width: 32%;
 }
 
 .aside {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 30vh;
-    background: #ef763a;
+    height: 33vh;
+    background: #f36;
 }
 
 .aside div {
     flex-direction: column;
     align-items: center;
-    height: 33vh;
-    width: 100%;
-    background: #e6af2e;
+    height: 3.7vh;
+    width: 85%;
+    background: #feea85;
 }
 
 .aside div:nth-child(1) {
-    margin-top: 13%;
+    margin-top: 5vh;
 }
 
 
@@ -135,13 +136,13 @@ aside {
 .peu {
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 10vh;
     background: black;
-    padding: 2% 1%;
+    padding: 2%;
 }
 
 .peu div {
-    height: 2.2vh;
+    height: 3.4vh;
     width: 100%;
     background: #ef763a;
 }
