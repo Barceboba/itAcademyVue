@@ -155,6 +155,7 @@ aside {
         padding: 0;
     }
 
+    /*Ajustes de bloque cap*/
     .cap {
         height: 32%;
     }
@@ -220,6 +221,7 @@ aside {
         margin-top: 0;
         height: 3.4vh;
         width: 90%;
+        background: #feea85;
     }
     
     .aside div:nth-child(1) {
@@ -230,9 +232,7 @@ aside {
         margin-top: 0;
     }
 
-
     /*Footer*/
-
     .peu {
         padding: 2%;
         justify-content: center;
