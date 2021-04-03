@@ -27,47 +27,117 @@ body {
     flex-direction: column;
     justify-content: space-around;
     height: 36%;
-    background-image: url(../images/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpeg);
-    background-size: cover 50% 50% no-repeat;
+    background: ghostwhite url(../images/fons-capçalera.jpg) no-repeat center center;
+    position: relative;
 }
 
 /* Contenedor 1 de header*/
 .cont1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 12vh;
 }
 
-.cont1 div:nth-child(1n+1) {
-    height: 33%;
-    width: 20%;
-    background: #eb5556;
+.logo {
+    background: url(../images/logo.png) no-repeat left center;
+    background-size: contain;
+    height: 7vh;
+    width: 6vw;
+    margin-left: 3%;
 }
 
-.cont1 div:nth-child(1) {
-    background: url(../images/Material\ activitat\ Flex\ nivell\ 2-logo.png);
+.nav {
+    width: 68%;
+}
+.nav a {
+    color: #757575;
+    text-decoration: none;
+       
 }
 
-.cont1 div:nth-child(2) {
-    flex-grow: .85;
+.nav a:hover {
+    color: #7a143f;
 }
+
+.navtext {
+    margin-right: 1.5vw;
+    margin-left: .4vw;
+    font-family: 'Montserrat';
+}
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 7vw;
+    color: #757575;
+}
+
+.social ul {
+    display: inline-block;
+}
+
+.social i:hover {
+   color: #7a143f;
+}
+
+.social li:nth-child(2) {
+    margin-top: 3vh;
+}
+
 
 /* Contenedor 2 de nav*/
 .cont2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12vh;
-    background: #ef763a;
+    height: 14vh;
+    background: white;
+    opacity: 30%;
+}
+
+header {
+    width: 96%;
+    align-self: center;
+    display: flex;
+}
+
+.cont2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+    width: 100%;
+    background: white;
+    opacity: 30%;   
 }
 
 .cont2 div {
-    height: 33%;
-    width: 97%;
-    background: #fecb5e;
+    font-size: 1.8em;
+    font-family: 'Times';
+    font-weight: bold;
+    color: #f36;
+
 }
 
+.cont2 div h1 {
+    display: flex;
+    height: 14vh;
+    align-items: center;
+}
+
+[class="820"] {
+    font-size: 5vw;
+    margin-right: .4rem;
+}
+
+
+[class="822"] {
+    font-size: 5vw;
+    margin-left: .4rem;
+}
 /* contenedor cos de sarticle y aside*/
 .cos {
     display: flex;
