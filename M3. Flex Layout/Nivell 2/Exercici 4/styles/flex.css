@@ -50,10 +50,10 @@ body {
 .nav {
     width: 68%;
 }
+
 .nav a {
     color: #757575;
     text-decoration: none;
-       
 }
 
 .nav a:hover {
@@ -65,7 +65,6 @@ body {
     margin-left: .4vw;
     font-family: 'Montserrat';
 }
-
 
 .social {
     display: flex;
@@ -86,7 +85,6 @@ body {
 .social li:nth-child(2) {
     margin-top: 3vh;
 }
-
 
 /* Contenedor 2 de nav*/
 .cont2 {
