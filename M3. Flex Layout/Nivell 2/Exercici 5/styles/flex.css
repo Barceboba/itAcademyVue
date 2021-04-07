@@ -416,19 +416,18 @@ aside {
         width: 100%;
         align-self: center;
     }
+
     .fruta {
         font-size: medium;
     }
 
     /*Apaptaciones cos*/
-    
     .cos {
          border: .2em solid #e2e2e2;
     }  
 
     .article {
         height: 204vh;
-
     }
 
     .cultura, .gastronomia, .ciudades, .itinerarios {
@@ -464,8 +463,6 @@ aside {
     .aside div:nth-child(2) {
         margin-top: 1%;
     }
-
-
 
     /*Adaptaciones footer*/
     .peu {
