@@ -3,36 +3,62 @@
     margin: 0px;
 }
 
-/*Body con flex calculo altura viewport*/
+/*Body con grid cálculo altura viewport*/
 body {
-    display: flex;
     height: calc(100vh - 0.1em);
     width: 80%;
     margin: auto;
     box-sizing: border-box;
     padding: 10px;
     background: #fffede;
+    
 }
 
-/*Contenedor de cajas*/
 .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav'
+    'header header header'
+    'article article aside'
+    'footer footer footer' ;
+    grid-template-rows: 10% 70% 20%;
+    grid-template-columns: 30% 60% 10%;
 }
+
+/*Definición areas grid*/
+.cont1 {
+    grid-area: nav;
+}
+
+.cont2 {
+    grid-area: header;
+}
+
+.article1 {
+    grid-area: article;
+}
+
+.aside1 {
+    grid-area: aside;
+}
+
+.peu {
+    grid-area: footer;
+}
+
+
 
 /* Contenedor cap flex en columna con header y nav*/
 .cap {
-    display: flex;
-    flex-direction: column;
-    height: 22%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 /* Contenedor 1 de header*/
+
 .cont1 {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,7 +72,7 @@ body {
 }
 
 .nav {
-    display: flex;
+    display: grid;
     width: 68%;
     font-size: small;
 }
@@ -71,7 +97,6 @@ body {
 }
 
 .social ul {
-    display: flex;
     justify-content: space-around;
     width: 11vw;
     color: #757575;
@@ -83,8 +108,10 @@ body {
 
 
 /* Contenedor 2 de nav*/
+
 .cont2 {
-    display: flex;
+    display: grid;
+    
     justify-content: center;
     opacity: 80%;
     font-family: 'Montserrat';
@@ -93,7 +120,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: grid;
     justify-content: center;
     background: ghostwhite url(../images/capalera.jpg) no-repeat center center;
     background-size: cover;
@@ -103,13 +130,9 @@ header {
 
 }
 
-.cont2 div h1 {
-    display: flex;
-    height: 14vh;
-    align-items: center;
-}
 
-/* contenedor cos de article y aside*/
+
+/* contenedor cos de article y aside*//*
 .cos {
     display: flex;
     border: .6em solid #e2e2e2;
@@ -253,14 +276,14 @@ aside {
     color: #ffff;
 }
 
-/* Contenedor peu con footer*/
+/* Contenedor peu con footer*//*
 .peu p {
     font-family: 'Montserrat';
     font-size: small;
     text-align: center;
 }
 
-/*Media Query tablet*/
+/*Media Query tablet*//*
 @media screen and (min-width: 640px) and (max-width: 1280px) {
 
     body {
@@ -269,11 +292,11 @@ aside {
         padding: 0;
     }
 
-    /*Ajustes de bloque cap*/
+    /*Ajustes de bloque cap*//*
     .cap {
         height: 18%;
     }
-    /*Variaciones en contenedor cap*/
+    /*Variaciones en contenedor cap*//*
     .cont1 {
         gap: 5%;
     }
@@ -290,7 +313,7 @@ aside {
         width: 100%;
     }
 
-    /*Variaciones contenedor cos*/
+    /*Variaciones contenedor cos*//*
     .cos {
         flex-direction: column;
         }
@@ -322,7 +345,7 @@ aside {
         margin-top: 0;
     }
 
-    /*Footer*/
+    /*Footer*//*
     .peu {
         padding: 2%;
         justify-content: center;
@@ -331,7 +354,7 @@ aside {
     
 }
 
-/*Media Queris mobil*/
+/*Media Queris mobil*//*
 @media screen and (min-width: 320px) and (max-width: 640px) {
     body {
         display: block;
@@ -339,7 +362,7 @@ aside {
         padding: 0;
         height: calc(100vh - 0em);
     }
-     /*Apaptaciones cap*/
+     /*Apaptaciones cap*//*
     .cont1 {
         flex-direction: column;
     }
@@ -421,7 +444,7 @@ aside {
         font-size: medium;
     }
 
-    /*Apaptaciones cos*/
+    /*Apaptaciones cos*//*
     .cos {
          border: .2em solid #e2e2e2;
     }  
@@ -464,7 +487,7 @@ aside {
         margin-top: 1%;
     }
 
-    /*Adaptaciones footer*/
+    /*Adaptaciones footer*//*
     .peu {
         justify-content: center;
         padding: 1vh;
