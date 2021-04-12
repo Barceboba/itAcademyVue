@@ -1,502 +1,256 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
 /*Body con grid cálculo altura viewport*/
 body {
-    height: calc(100vh - 0.1em);
-    width: 80%;
-    margin: auto;
-    box-sizing: border-box;
-    padding: 10px;
-    background: #fffede;
-    
+  height: calc(100vh - 1.3em);
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
 }
 
-.contenedor {
-    display: grid;
-    grid-template-areas: 
-    'nav nav nav'
-    'header header header'
-    'article article aside'
-    'footer footer footer' ;
-    grid-template-rows: 10% 70% 20%;
-    grid-template-columns: 30% 60% 10%;
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'nav1 nav1 nav1'
+    'header1 header1 header1'
+    'cos1 cos1 cos1'
+    'footer1 footer1 footer1';
+  grid-template-rows: 4% 21.5% 72% 3%;
+  grid-template-columns: 1fr 6fr 3fr;
+  background-color: #fffbda;
+
 }
 
-/*Definición areas grid*/
-.cont1 {
-    grid-area: nav;
+/*grid para nav*/
+nav {
+  display: grid;
+  grid-area: nav1;
 }
 
-.cont2 {
-    grid-area: header;
+.nav11 {
+  display: grid;
+  background: url(../images/logo.png) no-repeat left center;
+  background-size: contain;
+
+  justify-self: center;
+  width: 20%;
 }
 
-.article1 {
-    grid-area: article;
+.nav12 {
+  display: grid;
+  grid-template-areas:
+    'nav121  nav123  nav125  nav127  nav129';
+  grid-template-columns: 13% 13% 15% 15%;
+  align-content: baseline;
+  padding: 1%;
+  font-size: small;
 }
 
-.aside1 {
-    grid-area: aside;
+.nav12 a {
+  color: #757575;
+  text-decoration: none;
 }
 
-.peu {
-    grid-area: footer;
-}
-
-
-
-/* Contenedor cap flex en columna con header y nav*/
-.cap {
-    display: grid;
-    grid-template-columns: 1fr 6fr 2fr;
-    grid-template-rows: 1fr 8fr;
-}
-
-/* Contenedor 1 de header*/
-
-.cont1 {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    background: url(../images/logo.png) no-repeat left center;
-    background-size: contain;
-    height: 4vh;
-    width: 4vw;
-    margin-left: 3%;
-}
-
-.nav {
-    display: grid;
-    width: 68%;
-    font-size: small;
-}
-
-.nav a {
-    color: #757575;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    color: #7a143f;
+.nav12 a:hover {
+  color: #7a143f;
 }
 
 .navtext {
-    margin-right: 1.5vw;
-    margin-left: .4vw;
-    font-family: 'Montserrat';
+  margin-right: 1.5vw;
+  margin-left: .4vw;
+  font-family: 'Montserrat';
 }
 
-.social {
-    margin-right: 4%;
-}
-
-.social ul {
-    justify-content: space-around;
-    width: 11vw;
-    color: #757575;
-}
-
-.social i:hover {
-    color: #7a143f;
+.nav13 {
+  display: grid;
+  grid-template-areas:
+    'nav131 nav132 nav133';
+  grid-column: 3 / 4;
+  align-items: baseline;
+  padding: 2%;
 }
 
 
-/* Contenedor 2 de nav*/
+.nav13 a {
+  list-style: none;
+  color: #757575;
+  justify-self: center;
+}
 
-.cont2 {
-    display: grid;
-    
-    justify-content: center;
-    opacity: 80%;
-    font-family: 'Montserrat';
-    color: #cabdd0;
-    font-size: .6em;
+.nav13 i:hover {
+  color: #7a143f;
 }
 
 header {
-    display: grid;
-    justify-content: center;
-    background: ghostwhite url(../images/capalera.jpg) no-repeat center center;
-    background-size: cover;
-    width: 96%;
-    height: 76%;
-    align-self: center;
+  grid-area: header1;
+  display: grid;
 
 }
 
+.header1 {
+  display: grid;
+  margin: 0 1%;
+  grid-template-areas:
+    '. header11 .';
+  justify-content: center;
+  background: ghostwhite url(../images/capalera.jpg) no-repeat center center;
+  background-size: cover;
+}
 
+.header11 {
+  display: grid;
+  align-content: center;
+  opacity: 80%;
+  font-family: 'Montserrat';
+  color: #cabdd0;
+  font-size: .7em;
 
-/* contenedor cos de article y aside*//*
+}
+
+/*Fondo article aside*/
 .cos {
-    display: flex;
-    border: .6em solid #e2e2e2;
-    background: #e2e2e2;
+  background-color: #dedede;
+  display: grid;
+  grid-area: cos1;
+  grid-template-areas:
+    'article1 aside1';
+
+  grid-template-columns: 2fr 24%;
+
 }
 
-.article {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: 72vh;
+.cos1 {
+  margin: 2%;
 }
 
-.cultura,
-.gastronomia,
-.ciudades,
-.itinerarios {
-    width: 49%;
-    height: 34vh;
-    border: 2px solid #9d3125;
+/*Grid article*/
+article {
+  display: grid;
+  grid-area: article1;
+  grid-template-areas:
+    'section1 section2'
+    'section3 section4'
+    'section5 section5';
+  grid-template-rows: 1fr 1fr 5%;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  margin: 1%;
+
 }
 
-.flor {
-    background: url(../images/cherry.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-    align-content: baseline;
-    width: 100%;
-    height: 64.3%;
-    display: flex;
-    flex-direction: column;
+.section1,
+.section2,
+.section3,
+.section4 {
+  display: grid;
+  align-content: end;
+  border: 2px solid #9d3125;
 }
 
-.food {
-    background: url(../images/food.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-    align-content: baseline;
-    width: 100%;
-    height: 64.3%;
-    display: flex;
-    flex-direction: column;
+.section1 {
+  background: url(../images/cherry.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.japan {
-    background: url(../images/japan.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-    align-content: baseline;
-    width: 100%;
-    height: 64.3%;
-    display: flex;
-    flex-direction: column;
+.section2 {
+  background: url(../images/food.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.fuji {
-    background: url(../images/fuji.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
-    align-content: baseline;
-    width: 100%;
-    height: 64.3%;
-    display: flex;
-    flex-direction: column;
+.section3 {
+  background: url(../images/japan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section4 {
+  background: url(../images/fuji.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fecha {
-    color: #ffff;
-    font-family: 'Montserrat';
-    margin-bottom: 1%;
-    margin-left: 2%;
+  color: #ffff;
+  font-family: 'Montserrat';
+  margin-bottom: 1%;
+  margin-left: 2%;
 }
 
 .cenefa {
-    display: flex;
-    align-items: center;
-    color: #ffff;
-    background: #9d3125;
-    font-family: 'Montserrat';
-    font-size: small;
-    height: 1.6vh;
+
+  align-items: center;
+  color: #ffff;
+  background: #9d3125;
+  font-family: 'Montserrat';
+  font-size: small;
 }
 
 .text {
-    margin-left: 2%;
+  margin-left: 2%;
 }
 
 .parraf {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 31%;
-    padding: 1.2%;
-    font-size: small;
-    line-height: 1.2em;
-    font-family: 'Montserrat';
-    background: #d3cecd;
-    color: #000;
+  justify-content: space-between;
+  padding: 1.2%;
+  font-size: small;
+  line-height: 1.2em;
+  font-family: 'Montserrat';
+  background: #d3cecd;
+  color: #000;
 }
 
 .leermas {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
+
+/*Footer article*/
+.section5 {
+  grid-column: 1 / 3;
+  margin: 1% 0 1% 0;
+  background: #9d3125;
+  font-family: 'Montserrat';
+  color: #ffff;
+  text-align: center;
+  padding: .5%;
+}
+
 
 aside {
-    width: 186%;
+  display: grid;
+  grid-area: aside1;
+  padding: 3%;
 }
 
-.aside {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    line-height: 1.2em;
+.aside1 {
+  line-height: 1.2em;
 }
 
-.aside div {
-    background: #814c41;
-    padding: 2%;
-    color: #ffff;
-    font-family: 'Montserrat';
-    font-size: small;
+.aside1 div {
+  background: #814c41;
+  padding: 2%;
+  color: #ffff;
+  font-family: 'Montserrat';
+  font-size: small;
 }
 
-.aside div:nth-child(2) {
-    margin-top: 7%;
+.aside1 div:nth-child(2) {
+  margin-top: 7%;
 }
 
-.pie {
-    height: 3%;
-    width: 98.5%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background: #9d3125;
-    font-family: 'Montserrat';
-    color: #ffff;
+footer {
+  grid-area: footer1;
 }
 
-/* Contenedor peu con footer*//*
-.peu p {
-    font-family: 'Montserrat';
-    font-size: small;
-    text-align: center;
-}
-
-/*Media Query tablet*//*
-@media screen and (min-width: 640px) and (max-width: 1280px) {
-
-    body {
-        height: calc(100vh - 0em);
-        width: 100%;
-        padding: 0;
-    }
-
-    /*Ajustes de bloque cap*//*
-    .cap {
-        height: 18%;
-    }
-    /*Variaciones en contenedor cap*//*
-    .cont1 {
-        gap: 5%;
-    }
-
-    .nav, .social {
-        font-size: large;
-    }
-
-    .cont2 h1 {
-        height:  13.5vh;
-        font-size: 2em;
-    }
-    header {
-        width: 100%;
-    }
-
-    /*Variaciones contenedor cos*//*
-    .cos {
-        flex-direction: column;
-        }
-
-    article,
-    aside {
-        width: 100%;
-        display: block;
-    }
-
-    .aside {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 13vh;
-    }
-
-    .aside div {
-        margin-top: 0;
-        width: 98.5%;
-        padding: 1%;
-    }
-
-    .aside div:nth-child(1) {
-        margin-top: 0;
-    }
-
-    .aside div:nth-child(2) {
-        margin-top: 0;
-    }
-
-    /*Footer*//*
-    .peu {
-        padding: 2%;
-        justify-content: center;
-        width: 98%;
-    }
-    
-}
-
-/*Media Queris mobil*//*
-@media screen and (min-width: 320px) and (max-width: 640px) {
-    body {
-        display: block;
-        width: 100%;
-        padding: 0;
-        height: calc(100vh - 0em);
-    }
-     /*Apaptaciones cap*//*
-    .cont1 {
-        flex-direction: column;
-    }
-
-    .logo {
-        height: 7vh;
-        width: 14vw;
-        margin-left: 0;
-    }
-
-    .nav {
-        display:block;
-        flex-wrap: wrap;
-        font-size: large;
-        width: 100%;
-    }
-
-    .fas, .far {
-        margin-left: 3vw;
-        margin-right: 3vw;
-    }
-
-    .inici {
-        display: inline-flex;
-        background: #90b3e4;
-        margin: 1% 0;
-        width: 100%;
-    }
-
-    .rutas {
-        display: inline-flex;
-        background: #90b3e4;
-        margin: 1% 0;
-        width: 100%;
-    }
-
-    .hoteles {
-        display: inline-flex;
-        background: #90b3e4;
-        margin: 1% 0;
-        width: 100%;
-    }
-
-    .vuelos {
-        display: inline-flex;
-        background: #90b3e4;
-        margin: 1% 0;
-        width: 100%;
-    }
-
-    .contacto {
-        display: inline-flex;
-        background: #90b3e4;
-        margin: 1% 0;
-        width: 100%;
-    }
-    
-    .social {
-        font-size: x-large;
-        width: 100%;
-        display: inline-flex;
-        margin-right: 0;
-    }
-
-    .social ul {
-        width: 100%;
-    }
-
-    header {
-        width: 100%;    
-    }
-
-    .cont2 {
-        width: 100%;
-        align-self: center;
-    }
-
-    .fruta {
-        font-size: medium;
-    }
-
-    /*Apaptaciones cos*//*
-    .cos {
-         border: .2em solid #e2e2e2;
-    }  
-
-    .article {
-        height: 204vh;
-    }
-
-    .cultura, .gastronomia, .ciudades, .itinerarios {
-        width: 100%;
-        height: 50vh;
-        margin-top: 2px;
-    }
-
-    .cenefa {
-        height: 1.2em;
-    }
-
-    .parraf {
-        font-size: .7em;
-    }
-
-    .pie {
-        font-size: 0.68em;
-        width: 100%;
-        height: 3vh;
-    }
-
-    aside {
-        width: 100%;
-    }
-
-    .aside div {
-        margin-top: 3px;
-        font-size: .68em;
-        text-align: left;
-    }
-
-    .aside div:nth-child(2) {
-        margin-top: 1%;
-    }
-
-    /*Adaptaciones footer*//*
-    .peu {
-        justify-content: center;
-        padding: 1vh;
-        display: flex;
-    }
-
-    .peu p {
-        font-family: 'Montserrat';
-        font-size: small;
-    }
-
+/* Contenedor peu con footer*/
+.footer1 p {
+  font-family: 'Montserrat';
+  font-size: small;
+  text-align: center;
 }
