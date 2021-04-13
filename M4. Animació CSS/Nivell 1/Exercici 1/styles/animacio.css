@@ -10,94 +10,79 @@ body {
     width: 100%;
     margin: auto;
     box-sizing: border-box;
-    background-image: url(../images/basepelotita_Mesa\ de\ trabajo\ 1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #e3a446;
 }
 
 body div {
     display: flex;
     position: relative;
-    animation-name: pilota;
-    animation-duration: 28s;
+    animation: pilota 8s steps(100) infinite;
     background-image: url(../images/tennis-ball-157884.svg);
     filter: drop-shadow(5px 5px 10px #444);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 60px;
-    width: 60px;
-    animation-iteration-count: infinite;
+    height: 20vh;
+    width: 11vw;
+
     /* animation-direction: alternate;*/
 
 }
 
 @keyframes pilota {
 
-    6% {
-        transform: translate(13vw, 21vh);
+    0% {
+        animation-timing-function: linear;
     }
-   
-    
-    12% {      
-        
-    transform: translate(21vw, 48vh);
+
+    12% {
+        transform: translate(16vw, 39vh);
+        animation-timing-function: linear;
     }
-    
+
     18% {
-        transform: translate(25vw, 69vh);
+        /*! transform: translate(21vw, 69vh); */
+        animation-timing-function: linear;
     }
 
-  25% {
-        transform: translate(29vw, 98vh);
+    25% {
+        transform: translate(25vw, 80vh);
+        animation-timing-function: linear;
     }
-    
+
     31% {
-        transform: translate(48vw, 65vh);
+        transform: translate(48vw, 51vh);
+        animation-timing-function: linear;
     }
-    
-    37% {
-       transform: translate(63vw, 48vh);
-        
-    }
-    
-     43% {
-        transform: translate(78vw, 34vh);
-    }
-    
-    
 
-   50% {
-        transform: translate(96vw, 23vh);
-       
+    37% {
+        transform: translate(63vw, 38vh);
+        animation-timing-function: linear;
     }
-    
-    56% {
-        transform: translate(86vw, 37vh);
+
+    43% {
+        transform: translate(78vw, 23vh);
+        animation-timing-function: linear;
     }
-    
-     62% {
-        transform: translate(77vw, 52vh);
+
+    50% {
+        transform: translate(88vw, 16vh);
+        animation-timing-function: ease-out;
     }
- 68% {
-        /*! left: 0; */
-        /*! top: -100%; */
-        transform: translate(67vw, 76vh);
-    }
+
+
     75% {
-        transform: translate(61vw, 94vh);
-       
+        transform: translate(57vw, 80vh);
+        animation-timing-function: linear;
     }
-    
-    81% {
-        transform: translate(50vw, 70vh);
-    }
-    
+
     87% {
-        
-    transform: translate(36vw, 42vh);
+        transform: translate(29vw, 30vh);
+        animation-timing-function: linear;
     }
-    
+
+
     93% {
-        transform: translate(17vw, 17vh);;
+        transform: translate(17vw, 17vh);
+        animation-timing-function: linear;
     }
 }
