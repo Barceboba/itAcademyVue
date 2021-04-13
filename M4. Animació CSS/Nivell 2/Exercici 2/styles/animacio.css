@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/*Body con grid cálculo altura viewport*/
+body {
+    display: flex;
+    height: calc(100vh - .4em);
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    background: #e3a446;
+}
+/*Propiedades div, animación y pelotita*/
+body div {
+    display: flex;
+    position: relative;
+    animation: pilota 8s steps(100) infinite;
+    background-image: url(../images/tennis-ball-157884.svg);
+    filter: drop-shadow(5px 5px 10px #444);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20vh;
+    width: 11vw;
+}
+
+/*Propiedades de frames unidades viewport para responsive*/
+@keyframes pilota {
+
+    0% {
+        animation-timing-function: linear;
+    }
+
+    12% {
+        transform: translate(16vw, 39vh);
+        animation-timing-function: linear;
+    }
+
+    18% {
+        animation-timing-function: linear;
+    }
+
+    25% {
+        transform: translate(25vw, 80vh);
+        animation-timing-function: linear;
+    }
+
+    31% {
+        transform: translate(48vw, 51vh);
+        animation-timing-function: linear;
+    }
+
+    37% {
+        transform: translate(63vw, 38vh);
+        animation-timing-function: linear;
+    }
+
+    43% {
+        transform: translate(78vw, 23vh);
+        animation-timing-function: linear;
+    }
+
+    50% {
+        transform: translate(88vw, 16vh);
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        transform: translate(57vw, 80vh);
+        animation-timing-function: linear;
+    }
+
+    87% {
+        transform: translate(29vw, 30vh);
+        animation-timing-function: linear;
+    }
+
+    93% {
+        transform: translate(17vw, 17vh);
+        animation-timing-function: linear;
+    }
+}
