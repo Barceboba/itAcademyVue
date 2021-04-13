@@ -12,7 +12,7 @@ body {
     box-sizing: border-box;
     background: #e3a446;
 }
-
+/*Propiedades div, animación y pelotita*/
 body div {
     display: flex;
     position: relative;
@@ -23,11 +23,9 @@ body div {
     background-size: contain;
     height: 20vh;
     width: 11vw;
-
-    /* animation-direction: alternate;*/
-
 }
 
+/*Propiedades de frames unidades viewport para responsive*/
 @keyframes pilota {
 
     0% {
@@ -40,7 +38,6 @@ body div {
     }
 
     18% {
-        /*! transform: translate(21vw, 69vh); */
         animation-timing-function: linear;
     }
 
@@ -69,7 +66,6 @@ body div {
         animation-timing-function: ease-out;
     }
 
-
     75% {
         transform: translate(57vw, 80vh);
         animation-timing-function: linear;
@@ -79,7 +75,6 @@ body div {
         transform: translate(29vw, 30vh);
         animation-timing-function: linear;
     }
-
 
     93% {
         transform: translate(17vw, 17vh);
