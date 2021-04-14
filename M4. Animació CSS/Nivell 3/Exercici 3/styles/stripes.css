@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/*Body con grid cálculo altura viewport*/
+body {
+    display: flex;
+    height: calc(100vh - 0em);
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    background: #e3a446;
+}
+
+/*Bloque colorines*/
+.bloc1 {
+    background-color: #244F75;
+}
+
+.bloc2 {
+    background-color: #60BFBF;
+}
+
+.bloc3 {
+    background-color: #8C4B7E;
+}
+
+.bloc4 {
+    background-color: #F8BB44;
+}
+
+.bloc5 {
+    background-color: #F24B4B;
+}
+
+/*Características cmunes a los bloques*/
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato;
+    font-size: 8vh;
+    color: #ffff;
+    width: 25%;
+}
