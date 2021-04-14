@@ -7,31 +7,43 @@
 body {
     display: flex;
     height: calc(100vh - 0em);
-    width: 100%;
-    margin: auto;
     box-sizing: border-box;
-    background: #e3a446;
+    animation: barras 2s 10s 1s;
+   
 }
 
 /*Bloque colorines*/
 .bloc1 {
     background-color: #244F75;
+    width: 20%;
+    border-right-width: .2vw;
+border-right-style: solid;
 }
 
 .bloc2 {
     background-color: #60BFBF;
+    width: 20%;
+    border-right-width: .2vw;
+border-right-style: solid;
 }
 
 .bloc3 {
     background-color: #8C4B7E;
+    width: 20%;
+    border-right-width: .2vw;
+border-right-style: solid;
 }
 
 .bloc4 {
     background-color: #F8BB44;
+    width: 20%;
+    border-right-width: .2vw;
+border-right-style: solid;
 }
 
 .bloc5 {
     background-color: #F24B4B;
+    width: 20%;
 }
 
 /*Características cmunes a los bloques*/
@@ -42,5 +54,40 @@ div {
     font-family: Lato;
     font-size: 8vh;
     color: #ffff;
-    width: 25%;
+    border: 1% #ffff;
 }
+
+
+/*Cocolacion pseudo elemento ::before*/
+
+/*AniBarras*/
+
+@keyframes barras {
+    0% {
+
+        
+
+    }
+
+    20%{
+
+    }
+
+    40% {
+        
+    }
+
+    60%{
+
+    }
+
+    80% {
+
+    }
+
+    100% {
+
+
+    }
+}
+
