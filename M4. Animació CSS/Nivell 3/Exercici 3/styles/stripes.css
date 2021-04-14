@@ -35,7 +35,7 @@
     overflow: hidden;
     border-right-width: .2vw;
     border-right-style: solid;
-    animation: abloc2 .5s .1s both;
+    animation: abloc2 .5s 1s both;
     
 }
 
@@ -80,7 +80,7 @@ div {
     align-items: center;
     justify-content: center;
     font-family: Lato;
-    font-size: 8vh;
+    font-size: 10vh;
     color: #ffff;
 }
 
