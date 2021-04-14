@@ -3,50 +3,78 @@
     margin: 0px;
 }
 
-/*Body con grid cálculo altura viewport*/
-body {
-    display: flex;
-    height: calc(100vh - 0em);
-    box-sizing: border-box;
-    animation: barras 2s 10s 1s;
-   
-}
 
-/*Bloque colorines*/
+
+/*Define animacion div bloc
+.bloc {
+    animation: bloc 2.5s .5s;
+}*/
+.bloc {
+    min-height: 100vh;
+    text-align: center;
+    
+    
+}
+/*Bloque colorines con animaciones*/
 .bloc1 {
     background-color: #244F75;
     width: 20%;
+    min-height: 100vh;
+    overflow: hidden;
     border-right-width: .2vw;
-border-right-style: solid;
+    border-right-style: solid;
+    animation: abloc1 .5s .5s both;
+    
+
 }
 
 .bloc2 {
     background-color: #60BFBF;
     width: 20%;
+    min-height: 100vh;
+    overflow: hidden;
     border-right-width: .2vw;
-border-right-style: solid;
+    border-right-style: solid;
+    animation: abloc2 .5s .1s both;
+    
 }
 
 .bloc3 {
     background-color: #8C4B7E;
     width: 20%;
+    min-height: 100vh;
+    overflow: hidden;
     border-right-width: .2vw;
-border-right-style: solid;
+    border-right-style: solid;
+    animation: abloc3 .5s 1.5s both;
+    
+
 }
 
 .bloc4 {
     background-color: #F8BB44;
     width: 20%;
+    min-height: 100vh;
+    overflow: hidden;
     border-right-width: .2vw;
-border-right-style: solid;
+    border-right-style: solid;
+    animation: abloc4 .5s 2s both;
+    
+
 }
 
+/*No necesita borde, está a la derecha*/
 .bloc5 {
     background-color: #F24B4B;
     width: 20%;
+    min-height: 100vh;
+    overflow: hidden;
+    animation: abloc5 .5s 2.5s both;
+    
+
 }
 
-/*Características cmunes a los bloques*/
+/*Características comunes a los bloques*/
 div {
     display: flex;
     align-items: center;
@@ -54,7 +82,6 @@ div {
     font-family: Lato;
     font-size: 8vh;
     color: #ffff;
-    border: 1% #ffff;
 }
 
 
@@ -62,32 +89,63 @@ div {
 
 /*AniBarras*/
 
-@keyframes barras {
+@keyframes abloc1 {
     0% {
-
-        
-
+        transform: translate3d(-100%, 0, 0);
     }
 
-    20%{
-
-    }
-
-    40% {
+    100% {
+        transform: translate3d(0, 0, 0);
         
     }
+}
 
-    60%{
 
-    }
 
-    80% {
+
+@keyframes abloc2 {
+    0% {
+        transform: translate3d(0, -100%, 0);
 
     }
 
     100% {
-
-
+        transform: translate3d(0, 0, 0);
+        
     }
 }
 
+
+
+@keyframes abloc3 {
+    0% {
+        transform: translate3d(-0, 100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        
+    }
+}
+
+@keyframes abloc4 {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        
+    }
+}
+
+@keyframes abloc5 {
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+        
+    }
+}
