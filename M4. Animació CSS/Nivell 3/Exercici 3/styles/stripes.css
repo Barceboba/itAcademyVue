@@ -2,8 +2,10 @@
     box-sizing: border-box;
     margin: 0px;
 }
-
-
+/*Desbordamiento por animación evitado*/
+body {
+    overflow: hidden;
+}
 
 /*Define animacion div bloc
 .bloc {
@@ -23,9 +25,8 @@
     overflow: hidden;
     border-right-width: .2vw;
     border-right-style: solid;
-    animation: abloc1 .5s .5s both;
-    
-
+    animation: 895.777ms ease 104.223ms 1 normal both running abloc1;
+    /*Obtenido por debugación*/
 }
 
 .bloc2 {
@@ -35,8 +36,8 @@
     overflow: hidden;
     border-right-width: .2vw;
     border-right-style: solid;
-    animation: abloc2 .5s 1s both;
-    
+    animation: 1004.95ms ease 495.052ms 1 normal both running abloc2;
+    /*Obtenido por debugación*/
 }
 
 .bloc3 {
@@ -46,9 +47,8 @@
     overflow: hidden;
     border-right-width: .2vw;
     border-right-style: solid;
-    animation: abloc3 .5s 1.5s both;
-    
-
+    animation: 1257.42ms ease 742.577ms 1 normal both running abloc3;
+    /*Obtenido por debugación*/
 }
 
 .bloc4 {
@@ -58,9 +58,8 @@
     overflow: hidden;
     border-right-width: .2vw;
     border-right-style: solid;
-    animation: abloc4 .5s 2s both;
-    
-
+    animation: 1512.45ms ease 987.546ms 1 normal both running abloc4;
+    /*Obtenido por debugación*/
 }
 
 /*No necesita borde, está a la derecha*/
@@ -69,9 +68,8 @@
     width: 20%;
     min-height: 100vh;
     overflow: hidden;
-    animation: abloc5 .5s 2.5s both;
-    
-
+    animation: 1751.76ms ease 1248.24ms 1 normal both running abloc5;
+    /*Obtenido por debugación*/
 }
 
 /*Características comunes a los bloques*/
@@ -85,9 +83,9 @@ div {
 }
 
 
-/*Cocolacion pseudo elemento ::before*/
 
-/*AniBarras*/
+
+/*Animación Barras*/
 
 @keyframes abloc1 {
     0% {
