@@ -2,64 +2,91 @@
     box-sizing: border-box;
     margin: 0px;
 }
+
 /*Desbordamiento por animación evitado*/
 body {
     overflow: hidden;
 }
 
-/*Define animacion div bloc
-.bloc {
-    animation: bloc 2.5s .5s;
-}*/
+/*Aspectos comunes bloc*/
 .bloc {
     min-height: 100vh;
     text-align: center;
-    
-    
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    animation-fill-mode: both;
 }
+
+/*Transformación común a hover before*/
+.bloc :hover:before {
+    transform: skew(0deg) scale(.8, 0.4) translate(0, 0);
+    opacity: 0.1;
+}
+
+/*Transformación div before, content vacio para reconocimiento elemento*/
+.bloc div:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.05;
+    transform-origin: center center;
+    transform: skew(30deg) scaleY(1) translate(0, 0) rotate(2turn);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 /*Bloque colorines con animaciones*/
 .bloc1 {
     background-color: #244F75;
     width: 20%;
     min-height: 100vh;
+    /*Anula desbordamiento*/
     overflow: hidden;
-    border-right-width: .2vw;
-    border-right-style: solid;
+    border-right: .2vw solid;
     animation: 895.777ms ease 104.223ms 1 normal both running abloc1;
     /*Obtenido por debugación*/
+    transform: translate3d(-100%, 0, 0);
 }
 
 .bloc2 {
     background-color: #60BFBF;
     width: 20%;
     min-height: 100vh;
+    /*Anula desbordamiento*/
     overflow: hidden;
-    border-right-width: .2vw;
-    border-right-style: solid;
+    border-right: .2vw solid;
     animation: 1004.95ms ease 495.052ms 1 normal both running abloc2;
     /*Obtenido por debugación*/
+    transform: translate3d(0, 100%, 0);
 }
 
 .bloc3 {
     background-color: #8C4B7E;
     width: 20%;
     min-height: 100vh;
+    /*Anula desbordamiento*/
     overflow: hidden;
-    border-right-width: .2vw;
-    border-right-style: solid;
+    border-right: .2vw solid;
     animation: 1257.42ms ease 742.577ms 1 normal both running abloc3;
     /*Obtenido por debugación*/
+    transform: translate3d(0, 100%, 0);
 }
 
 .bloc4 {
     background-color: #F8BB44;
     width: 20%;
     min-height: 100vh;
+    /*Anula desbordamiento*/
     overflow: hidden;
-    border-right-width: .2vw;
-    border-right-style: solid;
+    border-right: .2vw solid;
     animation: 1512.45ms ease 987.546ms 1 normal both running abloc4;
     /*Obtenido por debugación*/
+    transform: translate3d(0, 100%, 0);
 }
 
 /*No necesita borde, está a la derecha*/
@@ -67,10 +94,14 @@ body {
     background-color: #F24B4B;
     width: 20%;
     min-height: 100vh;
+    /*Anula desbordamiento*/
     overflow: hidden;
     animation: 1751.76ms ease 1248.24ms 1 normal both running abloc5;
     /*Obtenido por debugación*/
+    transform: translate3d(100%, 0, 0);
 }
+
+
 
 /*Características comunes a los bloques*/
 div {
@@ -82,68 +113,84 @@ div {
     color: #ffff;
 }
 
-
-
-
 /*Animación Barras*/
-
 @keyframes abloc1 {
     0% {
         transform: translate3d(-100%, 0, 0);
+        font-size: 0;
+    }
+
+    50% {
+        font-size: 20vh;
     }
 
     100% {
         transform: translate3d(0, 0, 0);
-        
+        font-size: 100%;   
     }
 }
-
-
-
 
 @keyframes abloc2 {
     0% {
         transform: translate3d(0, -100%, 0);
+        font-size: 0;
+    }
 
+    50% {
+        font-size: 20vh;
     }
 
     100% {
         transform: translate3d(0, 0, 0);
-        
+        font-size: 100%;
     }
 }
-
-
 
 @keyframes abloc3 {
     0% {
         transform: translate3d(-0, 100%, 0);
+        font-size: 0;
+    }
+
+    80% {
+        font-size: 20vh;
     }
 
     100% {
         transform: translate3d(0, 0, 0);
-        
+        font-size: 100%;
     }
 }
 
 @keyframes abloc4 {
     0% {
         transform: translate3d(0, -100%, 0);
+        font-size: 0;
+    }
+
+    80% {
+        font-size: 20vh;
     }
 
     100% {
         transform: translate3d(0, 0, 0);
-        
+        font-size: 100%;
     }
 }
 
 @keyframes abloc5 {
     0% {
         transform: translate3d(100%, 0, 0);
+        font-size: 0;   
+    }
+
+    80% {
+        font-size: 20vh;
+        transform: rotate(1turn);
     }
 
     100% {
         transform: translate3d(0, 0, 0);
-        
+        font-size: 100%;  
     }
 }
