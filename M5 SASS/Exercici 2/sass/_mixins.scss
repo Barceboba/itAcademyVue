@@ -1,0 +1,82 @@
+// Tipografía
+@mixin letra {
+    font-size: 3.5vw;
+    font-weight: 300;
+    color: white;
+    font-family: "Lato";
+
+}
+
+// Bandas
+@mixin bandas {
+    height: $alturastrip;
+    width: $anchostrip;
+    overflow: $desbor;
+    text-align: center;
+    display: $flex;
+    cursor: pointer;
+
+}
+
+// Banda 
+@mixin banda {
+
+    position: relative;
+    width: 19.9vw;
+    margin: 0.1vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    overflow: $desbor;
+    align-items: $alicentro;
+    justify-content: $justicentro;
+}
+
+// Contenido banda
+@mixin contbanda {
+    position: $relativa;
+    width: 19.9vw;
+    margin: 0.1vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    overflow: $desbor;
+    align-items: $alicentro;
+    justify-content: $justicentro;
+
+}
+
+// Before contenido  banda
+@mixin efectobanda {
+    content: "";
+  display: $flex;
+  align-items: $alicentro;
+  justify-content: $justicentro;
+  position: $absoluta;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: $alturastrip;
+  background: white;
+  opacity: 0.05;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+  transform: skew(30deg) scaleY(1) translate(0, 0);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: $desbor;
+    
+}
+
+// Hover Before contenido banda
+@mixin efectohover {
+    -webkit-transform: skew(0deg) scaleX(2) translate(0, 0);
+    transform: skew(0deg) scaleX(2) translate(0, 0);
+    opacity: 0.2;
+    
+}
+
+// Bandas colores
+
+
