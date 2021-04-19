@@ -3,7 +3,6 @@ body, ul, li {
   margin: 0;
   padding: 0;
   font: 200 1em/1.5em "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: relative;
 }
 
 #main-wrapper {
@@ -15,7 +14,7 @@ header {
   height: 44px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0a5c71), to(#063642));
   background-image: linear-gradient(to bottom, #0a5c71, #063642);
-  position: absolute;
+  position: relative;
 }
 
 header nav {
@@ -37,6 +36,10 @@ header nav li a {
 main {
   margin: 20px 0 0;
   padding-bottom: 20px;
+}
+
+main img {
+  margin: 20px;
 }
 
 footer {
