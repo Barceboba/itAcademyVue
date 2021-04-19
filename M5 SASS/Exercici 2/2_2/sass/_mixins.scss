@@ -1,1 +1,8 @@
 // Archivo Mixins
+@mixin boduulli {
+    margin: 0;
+    padding: 0;
+    font: 200 1em/1.5em "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: $posicionrel;
+    
+}
