@@ -10,8 +10,8 @@ body {
     width: 100%;
     margin: auto;
     box-sizing: border-box;
-    /*background: #e3a446;*/
-    background: url(../images/bola.png);
+    background: #e3a446;
+    
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -29,47 +29,49 @@ body div {
     background-size: contain;
     height: 100px;
     width: 100px;
-  /*  border-radius: 50%;
+    /*  border-radius: 50%;
     background-color: yellowgreen;*/
 }
 
-/*Propiedades de frames unidades viewport para responsive*/
+/* rebote y deformación vertical en Y*/
 @keyframes bote1y {
     0% {
         height: 100px;
+        width: 100px;
         top: 0;
-        /*! transform: rotate(1turn); */
     }
+
     98% {
-        height: 100px;
-        /*! top: calc(100vh -100px); */
-        transform: scaleY(80%);
+        height: 80px;
+        width: 100px;
     }
 
     100% {
-        /*! height: 60px; */
+        height: 50px;
         top: calc(100vh - 60px);
-        transform: scaleY(15%);
+        
     }
 
 }
 
 @keyframes bote1x {
-
-
     0% {
         left: 0;
-        width: 100px;
-         
+        transform: scale(1, 1.4);
     }
-  /*  25% {
-        transform: scale(30%, 30%);
-    }*/
+
+    2% {
+        transform: scale(1, 1);
+    }
+
+    98% {
+        transform: scale(1, 1);
+    }
 
     100% {
         left: 96.3%;
-        width: 100px;
-        /*! transform: scaleX(50%); */
+        /* Deformación rebote lateral*/
+        transform: scale(1, 1.4);
     }
 
 }
