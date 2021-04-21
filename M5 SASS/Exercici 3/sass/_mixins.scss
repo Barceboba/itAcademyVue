@@ -12,7 +12,7 @@
     height: $alturastrip;
     width: $anchostrip;
     overflow: $desbor;
-    text-align: center;
+    text-align: $alicentro;
     display: $flex;
     cursor: pointer;
 
@@ -25,8 +25,8 @@
     width: 19.9vw;
     margin: 0.1vw;
     height: 100vh;
-    display: flex;
-    text-align: center;
+    display: $flex;
+    text-align: $alicentro;
     overflow: $desbor;
     align-items: $alicentro;
     justify-content: $justicentro;
@@ -38,8 +38,8 @@
     width: 19.9vw;
     margin: 0.1vw;
     height: 100vh;
-    display: flex;
-    text-align: center;
+    display: $flex;
+    text-align: $alicentro;
     overflow: $desbor;
     align-items: $alicentro;
     justify-content: $justicentro;
@@ -60,8 +60,8 @@
   height: $alturastrip;
   background: white;
   opacity: 0.05;
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
+  -webkit-transform-origin: $alicentro $alicentro;
+  transform-origin: $alicentro $alicentro;
   -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
   transform: skew(30deg) scaleY(1) translate(0, 0);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
