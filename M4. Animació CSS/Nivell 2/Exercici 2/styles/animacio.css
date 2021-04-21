@@ -6,12 +6,13 @@
 /*Body con grid cálculo altura viewport*/
 body {
     display: flex;
-    height: calc(100vh - .4em);
+    height: calc(100vh - 1px);
     width: 100%;
     margin: auto;
     box-sizing: border-box;
     background: #e3a446;
-    
+    /*Esconde imágen de trabajo
+    background: url(../images/bola.png);*/
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -19,7 +20,7 @@ body {
 
 /*Propiedades div, animación y pelotita*/
 body div {
-    /*! display: flex; */
+    display: flex;
     position: absolute;
     animation: bote1y 1s ease-in infinite alternate, bote1x 7.05s linear infinite alternate;
     /*Svg**/
@@ -33,48 +34,37 @@ body div {
     background-color: yellowgreen;*/
 }
 
-/* rebote y deformación vertical en Y*/
+
+/*Valores para eje Y*/
 @keyframes bote1y {
     0% {
         height: 100px;
-        width: 100px;
         top: 0;
-        transform: scaleY(1);
     }
 
-    98% {
-        /*! height: 88px; */
-        /*! width: 100px; */
-        transform: scaleY(1) rotate(45deg);
+    96% {
+        transform: scaleY(1) rotate(60deg);
+       /*! top: calc(100vh -100px); */
     }
 
     100% {
-        /*! height: 50px; */
-        top: calc(100vh - 52px);
-        
-        transform: scaleY(.1);
+        /*! transform: scaleY(.5); */
+        transform: scaleX(1.5);
+        top: calc(100vh - 80px);
     }
 
 }
 
+/*Valores para eje X*/
 @keyframes bote1x {
     0% {
         left: 0;
-        /*! transform: scaleX(.5); */
+        width: 100px;
     }
 
-    2% {
-        /*! transform: rotate(-20deg); */
-    }
-
-    97% {
-        /*! transform: rotate(20deg); */
-    }
-
-    99% {
+    100% {
         left: 96.3%;
-        /* Deformación rebote lateral*/
-        /*! transform: scaleX(.5); */
+        width: 100px;
     }
 
 }
