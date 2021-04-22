@@ -1,3 +1,4 @@
+@use "sass:map";
 @import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
 @import "mixins";
 @import "variables";
@@ -74,7 +75,7 @@ h1 {
 	}
 }
 
-.strip {
+/*.strip {
 	&:nth-child(1) {
 		.strip_content {
 			background-color: $it;
@@ -86,45 +87,53 @@ h1 {
 
 	&:nth-child(2) {
 		.strip_content {
-			background-color: $a;
+			//background-color: $a;
 			animation-name: strip--u4rx9pg;
-			animation-duration: 0.8s;
+			//animation-duration: 0.8s;
 
 		}
 	}
 
 	&:nth-child(3) {
 		.strip_content {
-			background-color: $ca;
+			//background-color: $ca;
 			animation-name: strip--u4rx9q8;
-			animation-duration: 0.7s;
+			//animation-duration: 0.7s;
 
 		}
 	}
 
 	&:nth-child(4) {
 		.strip_content {
-			background-color: $de;
+			//background-color: $de;
 			animation-name: strip--u4rx9qn;
-			animation-duration: 1s;
+			//animation-duration: 1s;
 
 		}
 	}
 
 	&:nth-child(5) {
 		.strip_content {
-			background-color: $my;
-			animation-name: strip--u4rx9r0;
-			animation-duration: 1.1s;
+			//background-color: $my;
+			//animation-name: strip--u4rx9r0;
+			//animation-duration: 1.1s;
 
 		}
 	}
-}
+}*/
+
+$tema-colors: ("1": hsl(208, 53, 30), "2": hsl(180, 43, 56), "3": hsl(313, 30, 42), "4":hsl(40, 93, 62), "5": hsl(0, 87, 62));
+$animation-name: ("1": $ani1, "2": $ani2, "3": $ani3, "4": $ani4, "5": $ani5);
+$animation-times: ("1": .5s, "2": .8s, "3": .7s, "4": 1s, "5": 1.1s);
 
 // For
 @for $i from 1 through 5 {
 	.strip:nth-child(#{$i}).strip_content {
 
 		animation-timing-function: $anitime;
+		//background-color: map.get($tema-colors, "#{$i}"); 
+		animation-name: map.get($animation-name, "#{$i}");
+		animation-duration: map.get($animation-times, "#{$i}");
+
 	}
 }
