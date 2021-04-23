@@ -7,7 +7,7 @@
 /* strips */
 /* before */
 /* strips 1-5: nth-child 1-5 */
-@keyframes strip--u4rx9pe {
+/*@keyframes strip--u4rx9pe {
 	from {
 		transform: translate3d(-100%, 0, 0);
 	}
@@ -35,7 +35,7 @@
 	from {
 		transform: translate3d(100%, 0, 0);
 	}
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
 * {
@@ -87,23 +87,4 @@ h1 {
 	}
 }
 
-// Keyframes
-
-/*@keyframes @include;
- $i{
-@include anima;
-}
-// For keyframes
-/*@mixin deneme($i){
-	@for $i from 0 through 100/$i {
-	  #{$i * 4}% {
-		transform:translateX(#{-320 * $i});
-	  } 
-	}
-  }
-  
-  
-  
-  @keyframes test {
-	@include deneme(4)
-  }
+@include keyframes;

@@ -49,24 +49,24 @@
 // Before contenido  banda
 @mixin efectobanda {
     content: "";
-  display: $flex;
-  align-items: $alicentro;
-  justify-content: $justicentro;
-  position: $absoluta;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 20vw;
-  height: $alturastrip;
-  background: white;
-  opacity: 0.05;
-  -webkit-transform-origin: $alicentro $alicentro;
-  transform-origin: $alicentro $alicentro;
-  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
-  transform: skew(30deg) scaleY(1) translate(0, 0);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  overflow: $desbor;
-    
+    display: $flex;
+    align-items: $alicentro;
+    justify-content: $justicentro;
+    position: $absoluta;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: $alturastrip;
+    background: white;
+    opacity: 0.05;
+    -webkit-transform-origin: $alicentro $alicentro;
+    transform-origin: $alicentro $alicentro;
+    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+    transform: skew(30deg) scaleY(1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: $desbor;
+
 }
 
 // Hover Before contenido banda
@@ -77,5 +77,10 @@
 }
 
 
-      
-      
+@mixin keyframes ($keyframename){
+    @for $i from 1 through 5 {
+        
+        transform: map-get($traslado, "#{$i}" );
+    }
+
+}

@@ -54,4 +54,4 @@ $animation-times: ("1": .5s, "2": .8s, "3": .7s, "4": 1s, "5": 1.1s);
 
 $traslado: ("1": $mov01, "2": $mov0204, "3": $mov3, "4": $mov0204, "5": $mov5);
 
-
+$keyframename: map-get($animation-name, "#{$i}");
