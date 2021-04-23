@@ -76,6 +76,19 @@ h1 {
 }
 
 // For contenido bandas
+/*@for $i from 1 through 5 {
+	.strip:nth-child(#{$i}) .strip_content {
+
+		animation-timing-function: $anitime;
+		background-color: map-get($tema-colors, "#{$i}");
+		animation-name: map-get($animation-name, "#{$i}");
+		animation-duration: map-get($animation-times, "#{$i}");
+
+	}
+}*/
+
+//@include keyframes;
+
 @for $i from 1 through 5 {
 	.strip:nth-child(#{$i}) .strip_content {
 
@@ -86,5 +99,3 @@ h1 {
 
 	}
 }
-
-@include keyframes;

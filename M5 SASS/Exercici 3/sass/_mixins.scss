@@ -1,3 +1,4 @@
+@use "sass:map";
 // Tipografía
 @mixin letra {
     font-size: 3.5vw;
@@ -77,10 +78,24 @@
 }
 
 
-@mixin keyframes ($keyframename){
-    @for $i from 1 through 5 {
+/*@mixin keyframes {
+   // @for $i from 1 through 5 {
         
-        transform: map-get($traslado, "#{$i}" );
-    }
+        transform: map-get($traslado, "#{$i}");
+    }*/
 
-}
+//}
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+  }
