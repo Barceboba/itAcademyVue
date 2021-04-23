@@ -3,41 +3,6 @@
 @import "mixins";
 @import "variables";
 
-/* general */
-/* strips */
-/* before */
-/* strips 1-5: nth-child 1-5 */
-/*@keyframes strip--u4rx9pe {
-	from {
-		transform: translate3d(-100%, 0, 0);
-	}
-}
-
-@keyframes strip--u4rx9pg {
-	from {
-		transform: translate3d(0, 100%, 0);
-	}
-}
-
-@keyframes strip--u4rx9q8 {
-	from {
-		transform: translate3d(0, -100%, 0);
-	}
-}
-
-@keyframes strip--u4rx9qn {
-	from {
-		transform: translate3d(0, 100%, 0);
-	}
-}
-
-@keyframes strip--u4rx9r0 {
-	from {
-		transform: translate3d(100%, 0, 0);
-	}
-} */
-
-/*# sourceMappingURL=style.css.map */
 * {
 	box-sizing: border-box;
 }
@@ -76,19 +41,6 @@ h1 {
 }
 
 // For contenido bandas
-/*@for $i from 1 through 5 {
-	.strip:nth-child(#{$i}) .strip_content {
-
-		animation-timing-function: $anitime;
-		background-color: map-get($tema-colors, "#{$i}");
-		animation-name: map-get($animation-name, "#{$i}");
-		animation-duration: map-get($animation-times, "#{$i}");
-
-	}
-}*/
-
-//@include keyframes;
-
 @for $i from 1 through 5 {
 	.strip:nth-child(#{$i}) .strip_content {
 
@@ -98,4 +50,30 @@ h1 {
 		animation-duration: map-get($animation-times, "#{$i}");
 
 	}
+}
+
+//@include keyframes;
+$ani1: strip--u4rx9pg;
+$ani2: strip--u4rx9pg;
+$ani3: strip--u4rx9q8;
+$ani4: strip--u4rx9qn;
+$ani5: strip--u4rx9r0;
+
+// Movimiento keyframes
+$mov01: translate3d(-100%, 0, 0);
+$mov0204: translate3d(0, 100%, 0);
+$mov3: translate3d(0, -100%, 0);
+$mov5: translate3d(100%, 0, 0);
+
+$animation-name: ("1": $ani1, "2": $ani2, "3": $ani3, "4": $ani4, "5": $ani5);
+$traslado: ("1": $mov01, "2": $mov0204, "3": $mov3, "4": $mov0204, "5": $mov5);
+
+// 👇 matters 
+
+@for $i from 1 through 5  {
+  @keyframes #{map-get($animation-name, "#{$i}")}
+  {
+    transform: map-get($traslado, "#{$i}");
+}
+
 }
