@@ -77,8 +77,3 @@
 }
 
 
-@mixin keyframes {
-    animation-name: map-get($animation-name, "#{$i}");
-    transform: map-get($traslado , "#{$i}");
-}
-

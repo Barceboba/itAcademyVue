@@ -1,4 +1,4 @@
-@use "sass:map";
+//@use "sass:map";
 @import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
 @import "mixins";
 @import "variables";
@@ -52,28 +52,13 @@ h1 {
 	}
 }
 
-//@include keyframes;
-$ani1: strip--u4rx9pg;
-$ani2: strip--u4rx9pg;
-$ani3: strip--u4rx9q8;
-$ani4: strip--u4rx9qn;
-$ani5: strip--u4rx9r0;
-
-// Movimiento keyframes
-$mov01: translate3d(-100%, 0, 0);
-$mov0204: translate3d(0, 100%, 0);
-$mov3: translate3d(0, -100%, 0);
-$mov5: translate3d(100%, 0, 0);
-
-$animation-name: ("1": $ani1, "2": $ani2, "3": $ani3, "4": $ani4, "5": $ani5);
-$traslado: ("1": $mov01, "2": $mov0204, "3": $mov3, "4": $mov0204, "5": $mov5);
-
 // 👇 matters 
-
-@for $i from 1 through 5  {
-  @keyframes #{map-get($animation-name, "#{$i}")}
-  {
-    transform: map-get($traslado, "#{$i}");
-}
-
+// For de los keyframes
+@for $i from 1 through 5 {
+	@keyframes #{map-get($animation-name, "#{$i}")}
+ {
+		from {
+			transform: map-get($traslado, "#{$i}");
+		}
+	}
 }
