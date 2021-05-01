@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+    
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+  body {
+    height: calc(100vh - 20px);
+           
+  }
+
+  .row {
+    margin: 0;
+  }
+
+//X modal
+.text-warning {
+  opacity: .9;
+}
+
+

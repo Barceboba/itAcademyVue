@@ -1,0 +1,22 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: calc(100vh - 20px);
+}
+
+.row {
+  margin: 0;
+}
+
+.text-warning {
+  opacity: .9;
+}
+/*# sourceMappingURL=main.css.map */
