@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+@import "mixins";
+@import "variables";
+
 html {
     box-sizing: border-box;
     
@@ -21,4 +25,7 @@ html {
   opacity: .9;
 }
 
-
+// Color hamburger
+path {
+  fill: #ffc107;
+}
